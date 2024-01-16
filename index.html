@@ -78,10 +78,17 @@
       };
     </script>
     <script>
-      function openInstagramInNewTab() {
+      function openInstagram() {
         var url = "https://www.instagram.com/georgiadunham/";
-        var win = window.open(url, "_blank");
-        win.focus();
+        window.location.href = url;
+      }
+      function openFacebook() {
+        var url = "https://www.facebook.com/profile.php?id=100009123693075";
+        window.location.href = url;
+      }
+      function openLinkedin() {
+        var url = "https://www.linkedin.com/in/georgia-dunham-262556193//";
+        window.location.href = url;
       }
     </script>
   </head>
@@ -123,46 +130,43 @@
             </li>
             <!-- <li><a href="#section-blog" class="nav-link">Blog</a></li> -->
             <li><a href="#section-contact" class="nav-link">Contact</a></li>
-            <li style="display: flex" onclick="openInstagramInNewTab();">
+            <li style="display: flex" onclick="openInstagram();">
               <a
                 href="https://www.instagram.com/georgiadunham/"
                 class="nav-link"
-                >Instagram</a
-              >
-              <img
-                src="svgs/instagram.svg"
-                alt="Instagram Icon"
-                style="margin-left: 0.5em"
-              />
+                >Instagram
+                <img
+                  src="svgs/instagram.svg"
+                  alt="Instagram Icon"
+                  style="margin-left: 0.5em"
+                />
+              </a>
             </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="https://www.instagram.com/georgiadunham/"
-                ><span class="icon-instagram"></span
-              ></a>
-            </li>
-            <li>
+
+            <li style="display: flex" onclick="openFacebook();">
               <a
                 href="https://www.facebook.com/profile.php?id=100009123693075"
-                target="_blank"
-                ><span class="icon-facebook"></span
-              ></a>
+                class="nav-link"
+                >Facebook
+                <img
+                  src="svgs/facebook.svg"
+                  alt="Facebook Icon"
+                  style="margin-left: 0.5em"
+                />
+              </a>
             </li>
-            <li>
-              <a href="https://www.instagram.com/georgiadunham/" target="_blank"
-                ><img src="svgs/instagram.svg" alt="Instagram Icon"
-              /></a>
-            </li>
-            <!-- <li>
-              <a href="#"><span class="icon-twitter"></span></a>
-            </li> -->
-            <li>
+
+            <li style="display: flex" onclick="openLinkedin();">
               <a
-                href="https://www.linkedin.com/in/georgia-dunham-262556193/"
-                target="_blank"
-                ><span class="icon-linkedin"></span
-              ></a>
+                href="https://www.linkedin.com/in/georgia-dunham-262556193//"
+                class="nav-link"
+                >LinkedIn
+                <img
+                  src="svgs/linkedin.svg"
+                  alt="LinkedIn Icon"
+                  style="margin-left: 0.5em"
+                />
+              </a>
             </li>
           </ul>
         </div>
