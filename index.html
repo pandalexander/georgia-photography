@@ -77,6 +77,13 @@
           });
       };
     </script>
+    <script>
+      function openInstagramInNewTab() {
+        var url = "https://www.instagram.com/georgiadunham/";
+        var win = window.open(url, "_blank");
+        win.focus();
+      }
+    </script>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
     <div class="site-wrap">
@@ -116,10 +123,9 @@
             </li>
             <!-- <li><a href="#section-blog" class="nav-link">Blog</a></li> -->
             <li><a href="#section-contact" class="nav-link">Contact</a></li>
-            <li style="display: flex">
+            <li style="display: flex" onclick="openInstagramInNewTab();">
               <a
                 href="https://www.instagram.com/georgiadunham/"
-                target="_blank"
                 class="nav-link"
                 >Instagram</a
               >
